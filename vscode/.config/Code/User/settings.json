@@ -1,0 +1,55 @@
+{
+    "workbench.colorTheme": "Light Modern",
+    
+    // "notebook.security.allowUntrustedHtml": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "interactiveWindow.executeWithShiftEnter": true,
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.runStartupCommands": "",
+
+    // Set zsh as default terminal on Linux
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "/usr/bin/zsh"
+        }
+    },
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.panel.showLabels": false,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "redhat.telemetry.enabled": false,
+    "jupyter.enableExtendedPythonKernelCompletions": false,
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "cSpell.language": "en-GB,de",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "claudeCode.preferredLocation": "panel",
+    "chat.viewSessions.orientation": "stacked",
+
+    // latex: tectonic
+    "latex-workshop.latex.recipes": [
+    {
+        "name": "tectonic",
+        "tools": ["tectonic"]
+    }
+    ],
+    "latex-workshop.latex.tools": [
+    {
+        "name": "tectonic",
+        "command": "tectonic",
+        "args": ["%DOC%.tex"]
+    }
+    ],
+    "latex-workshop.linting.chktex.enabled": false,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.pdf": "latex-workshop-pdf-hook"
+    }
+}
