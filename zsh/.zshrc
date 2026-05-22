@@ -25,5 +25,12 @@ zshaddhistory() {
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Gurobi
+export GUROBI_HOME="$(echo $HOME/gurobi/gurobi*/linux64 | tr ' ' '\n' | sort -V | tail -1)"
+if [ -d "$GUROBI_HOME" ]; then
+    export PATH="$PATH:$GUROBI_HOME/bin"
+    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$GUROBI_HOME/lib"
+fi
+
 # starship
 eval "$(starship init zsh)"
