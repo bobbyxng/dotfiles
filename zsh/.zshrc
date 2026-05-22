@@ -32,5 +32,9 @@ if [ -d "$GUROBI_HOME" ]; then
     export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$GUROBI_HOME/lib"
 fi
 
+# TUB openconnect VPN
+alias tuvpn-split='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-split'
+alias tuvpn-full='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-full'
+
 # starship
 eval "$(starship init zsh)"
