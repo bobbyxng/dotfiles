@@ -1,6 +1,3 @@
-# dotfiles alias
-alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 # homebrew
 if [ -x "/home/linuxbrew/.linuxbrew/bin/brew" ]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
