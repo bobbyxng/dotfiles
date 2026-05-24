@@ -43,6 +43,9 @@ fi
 alias tuvpn-split='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-split'
 alias tuvpn-full='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-full'
 
+# home bin folder
+export PATH="$HOME/bin:$PATH"
+
 # starship
 eval "$(starship init bash)"
 export PATH="$HOME/.local/bin:$PATH"
