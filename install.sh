@@ -11,7 +11,7 @@ else
 fi
 
 # install rpm-ostree packages
-rpm-ostree install --idempotent code zsh gnome-tweaks solaar stow
+rpm-ostree install --idempotent code zsh gnome-tweaks solaar stow fastfetch
 
 # homebrew
 if ! command -v brew &>/dev/null; then

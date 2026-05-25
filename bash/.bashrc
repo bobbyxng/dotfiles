@@ -49,3 +49,6 @@ export PATH="$HOME/bin:$PATH"
 # starship
 eval "$(starship init bash)"
 export PATH="$HOME/.local/bin:$PATH"
+
+# fastfetch
+fastfetch

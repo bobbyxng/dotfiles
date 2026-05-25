@@ -41,3 +41,6 @@ export PATH="$HOME/bin:$PATH"
 
 # starship
 eval "$(starship init zsh)"
+
+# fastfetch
+fastfetch
